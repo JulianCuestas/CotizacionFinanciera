@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 29/06/2018 09:54:03 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="cotizacion.model.Socios" table="socios" catalog="financiera" optimistic-lock="version">
+        <id name="idSocio" type="java.lang.Integer">
+            <column name="idSocio" />
+            <generator class="identity" />
+        </id>
+        <property name="nombreSocio" type="string">
+            <column name="nombreSocio" length="45" />
+        </property>
+        <property name="tasaInteres" type="java.lang.Double">
+            <column name="tasa" precision="22" scale="0" />
+        </property>
+        <property name="montoDisponible" type="string">
+            <column name="montoDisponible" length="45" />
+        </property>
+    </class>
+</hibernate-mapping>
